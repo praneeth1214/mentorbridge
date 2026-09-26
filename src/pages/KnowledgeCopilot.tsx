@@ -1,3 +1,4 @@
+import API_BASE_URL from '../lib/api'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
@@ -168,7 +169,7 @@ export default function KnowledgeCopilot() {
       // ------------------------------------------------------
 
       const response = await fetch(
-        'http://localhost:8000/api/copilot',
+        `${API_BASE_URL}/api/copilot`,
         {
           method: 'POST',
 

@@ -1,3 +1,4 @@
+import API_BASE_URL from '../lib/api'
 import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import {
@@ -56,7 +57,7 @@ export default function MentorProfile() {
         setError('')
 
         const response = await fetch(
-          'http://localhost:8000/api/explain',
+          `${API_BASE_URL}/api/explain`,
           {
             method: 'POST',
             headers: {

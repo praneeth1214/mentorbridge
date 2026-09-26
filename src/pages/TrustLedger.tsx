@@ -1,3 +1,4 @@
+import API_BASE_URL from '../lib/api'
 import { useEffect, useState } from 'react'
 import {
   CheckCircle2,
@@ -71,7 +72,7 @@ export default function TrustLedger() {
       setError('')
 
       const response = await fetch(
-        'http://localhost:8000/api/ledger'
+        `${API_BASE_URL}/api/ledger`
       )
 
       if (!response.ok) {
@@ -102,7 +103,7 @@ export default function TrustLedger() {
       setError('')
 
       const response = await fetch(
-        'http://localhost:8000/api/ledger/verify'
+        `${API_BASE_URL}/api/ledger/verify`
       )
 
       if (!response.ok) {

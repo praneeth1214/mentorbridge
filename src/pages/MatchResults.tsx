@@ -1,3 +1,4 @@
+import API_BASE_URL from '../lib/api'
 import { useEffect, useRef, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import {
@@ -62,7 +63,7 @@ export default function MatchResults() {
       setLoading(true)
       setError('')
 
-      const response = await fetch('http://localhost:8000/api/match', {
+      const response = await fetch(`${API_BASE_URL}/api/match`,  {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
