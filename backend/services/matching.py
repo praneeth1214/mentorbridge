@@ -2,25 +2,16 @@ import json
 from pathlib import Path
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 MENTORS_FILE = BASE_DIR / "data" / "mentors.json"
 
-_model = None
 _mentors = None
-_mentor_embeddings = None
-
-
-def load_model():
-    global _model
-
-    if _model is None:
-        _model = SentenceTransformer("all-MiniLM-L6-v2")
-
-    return _model
+_vectorizer = None
+_mentor_matrix = None
 
 
 def load_mentors():
@@ -46,21 +37,24 @@ def mentor_text(mentor):
     )
 
 
-def get_mentor_embeddings():
-    global _mentor_embeddings
+def get_vectorizer_and_matrix():
+    global _vectorizer, _mentor_matrix
 
-    if _mentor_embeddings is None:
-        model = load_model()
+    if _vectorizer is None or _mentor_matrix is None:
         mentors = load_mentors()
 
         texts = [mentor_text(mentor) for mentor in mentors]
 
-        _mentor_embeddings = model.encode(
-            texts,
-            normalize_embeddings=True,
+        _vectorizer = TfidfVectorizer(
+            lowercase=True,
+            stop_words="english",
+            ngram_range=(1, 2),
+            sublinear_tf=True,
         )
 
-    return _mentor_embeddings
+        _mentor_matrix = _vectorizer.fit_transform(texts)
+
+    return _vectorizer, _mentor_matrix
 
 
 def build_problem_text(problem: str, analysis: dict):
@@ -78,20 +72,16 @@ def build_problem_text(problem: str, analysis: dict):
 
 
 def match_mentors(problem: str, analysis: dict, top_k: int = 3):
-    model = load_model()
     mentors = load_mentors()
-    mentor_embeddings = get_mentor_embeddings()
+    vectorizer, mentor_matrix = get_vectorizer_and_matrix()
 
     problem_text = build_problem_text(problem, analysis)
 
-    problem_embedding = model.encode(
-        [problem_text],
-        normalize_embeddings=True,
-    )
+    problem_vector = vectorizer.transform([problem_text])
 
     similarities = cosine_similarity(
-        problem_embedding,
-        mentor_embeddings,
+        problem_vector,
+        mentor_matrix,
     )[0]
 
     ranked_indices = np.argsort(similarities)[::-1][:top_k]
@@ -103,8 +93,6 @@ def match_mentors(problem: str, analysis: dict, top_k: int = 3):
 
         similarity = float(similarities[index])
 
-        # Convert similarity into a readable percentage.
-        # This is a similarity score, not a probability.
         match_percentage = round(
             max(0.0, min(1.0, similarity)) * 100
         )
