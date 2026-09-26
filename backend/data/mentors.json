@@ -1,0 +1,272 @@
+[
+  {
+    "id": "mentor-001",
+    "name": "Rajesh Mehta",
+    "role": "Former CTO & Technology Advisor",
+    "company": "Technology & SaaS",
+    "years_experience": 24,
+    "expertise": [
+      "Software Architecture",
+      "SaaS",
+      "Cloud Computing",
+      "Product Engineering",
+      "Technology Strategy"
+    ],
+    "industries": [
+      "SaaS",
+      "Enterprise Technology",
+      "Cloud"
+    ],
+    "experience_summary": "24 years of experience building and scaling software products, leading engineering teams, designing cloud architectures, and developing SaaS platforms.",
+    "skills": [
+      "System Design",
+      "Cloud Architecture",
+      "SaaS",
+      "Engineering Leadership",
+      "Product Development"
+    ]
+  },
+  {
+    "id": "mentor-002",
+    "name": "Anita Rao",
+    "role": "Former Data Science Director",
+    "company": "Data & Analytics",
+    "years_experience": 21,
+    "expertise": [
+      "Data Science",
+      "Machine Learning",
+      "Predictive Analytics",
+      "Business Intelligence",
+      "AI Strategy"
+    ],
+    "industries": [
+      "FinTech",
+      "Retail",
+      "Analytics"
+    ],
+    "experience_summary": "21 years working with analytics and machine learning teams, developing predictive models and turning business data into actionable decisions.",
+    "skills": [
+      "Machine Learning",
+      "Python",
+      "Predictive Modeling",
+      "Data Analytics",
+      "AI Strategy"
+    ]
+  },
+  {
+    "id": "mentor-003",
+    "name": "Vikram Sharma",
+    "role": "Former Product & Growth Executive",
+    "company": "Consumer Technology",
+    "years_experience": 19,
+    "expertise": [
+      "Product Strategy",
+      "Growth",
+      "Customer Research",
+      "Go-to-Market",
+      "Product-Market Fit"
+    ],
+    "industries": [
+      "Consumer Apps",
+      "E-commerce",
+      "Digital Products"
+    ],
+    "experience_summary": "19 years of experience launching digital products, identifying customer needs, developing growth strategies, and scaling technology businesses.",
+    "skills": [
+      "Product Strategy",
+      "Growth",
+      "Market Research",
+      "Go-to-Market",
+      "Customer Discovery"
+    ]
+  },
+  {
+    "id": "mentor-004",
+    "name": "Meera Iyer",
+    "role": "Former Finance & Strategy Director",
+    "company": "Financial Services",
+    "years_experience": 22,
+    "expertise": [
+      "Financial Planning",
+      "Business Strategy",
+      "Fundraising",
+      "Financial Modeling",
+      "Risk Management"
+    ],
+    "industries": [
+      "FinTech",
+      "Banking",
+      "Startups"
+    ],
+    "experience_summary": "22 years in financial strategy, planning, fundraising, business modeling, and risk management across financial services and startup environments.",
+    "skills": [
+      "Financial Modeling",
+      "Fundraising",
+      "Business Planning",
+      "Risk Management",
+      "Corporate Strategy"
+    ]
+  },
+  {
+    "id": "mentor-005",
+    "name": "Arjun Nair",
+    "role": "Former Operations Executive",
+    "company": "Supply Chain & Operations",
+    "years_experience": 25,
+    "expertise": [
+      "Operations",
+      "Supply Chain",
+      "Process Optimization",
+      "Logistics",
+      "Operational Strategy"
+    ],
+    "industries": [
+      "Manufacturing",
+      "Logistics",
+      "Retail"
+    ],
+    "experience_summary": "25 years improving large-scale operations, supply chains, logistics systems, and business processes across manufacturing and retail organizations.",
+    "skills": [
+      "Operations Management",
+      "Supply Chain",
+      "Process Optimization",
+      "Logistics",
+      "Business Operations"
+    ]
+  },
+  {
+    "id": "mentor-006",
+    "name": "Kavitha Menon",
+    "role": "Former Marketing Director",
+    "company": "Brand & Digital Marketing",
+    "years_experience": 18,
+    "expertise": [
+      "Digital Marketing",
+      "Brand Strategy",
+      "Customer Acquisition",
+      "Content Strategy",
+      "Market Positioning"
+    ],
+    "industries": [
+      "Consumer Brands",
+      "E-commerce",
+      "Technology"
+    ],
+    "experience_summary": "18 years of experience building brands, developing customer acquisition strategies, positioning products, and leading digital marketing teams.",
+    "skills": [
+      "Digital Marketing",
+      "Brand Strategy",
+      "Customer Acquisition",
+      "Market Positioning",
+      "Content Marketing"
+    ]
+  },
+  {
+    "id": "mentor-007",
+    "name": "Suresh Reddy",
+    "role": "Former Cybersecurity Head",
+    "company": "Enterprise Security",
+    "years_experience": 23,
+    "expertise": [
+      "Cybersecurity",
+      "Risk Management",
+      "Cloud Security",
+      "Data Protection",
+      "Security Architecture"
+    ],
+    "industries": [
+      "Enterprise Technology",
+      "Banking",
+      "Cloud"
+    ],
+    "experience_summary": "23 years leading cybersecurity programs, designing security architectures, managing enterprise risks, and protecting sensitive business data.",
+    "skills": [
+      "Cybersecurity",
+      "Security Architecture",
+      "Cloud Security",
+      "Risk Management",
+      "Data Protection"
+    ]
+  },
+  {
+    "id": "mentor-008",
+    "name": "Priya Kapoor",
+    "role": "Former HR & People Strategy Leader",
+    "company": "People & Organization",
+    "years_experience": 20,
+    "expertise": [
+      "Talent Strategy",
+      "Leadership",
+      "Organizational Design",
+      "Hiring",
+      "People Operations"
+    ],
+    "industries": [
+      "Technology",
+      "Consulting",
+      "Startups"
+    ],
+    "experience_summary": "20 years developing people strategies, building teams, improving hiring processes, and designing organizational structures for growing companies.",
+    "skills": [
+      "Talent Management",
+      "Hiring",
+      "Leadership",
+      "Organization Design",
+      "People Operations"
+    ]
+  },
+  {
+    "id": "mentor-009",
+    "name": "Daniel Thomas",
+    "role": "Former Startup Founder & CEO",
+    "company": "Entrepreneurship",
+    "years_experience": 27,
+    "expertise": [
+      "Startup Strategy",
+      "Entrepreneurship",
+      "Fundraising",
+      "Business Development",
+      "Market Expansion"
+    ],
+    "industries": [
+      "Technology",
+      "Startups",
+      "B2B"
+    ],
+    "experience_summary": "27 years of entrepreneurial and executive experience building businesses, raising capital, developing partnerships, and expanding into new markets.",
+    "skills": [
+      "Entrepreneurship",
+      "Fundraising",
+      "Business Development",
+      "Startup Strategy",
+      "Market Expansion"
+    ]
+  },
+  {
+    "id": "mentor-010",
+    "name": "Lakshmi Srinivas",
+    "role": "Former Healthcare Technology Executive",
+    "company": "Healthcare Technology",
+    "years_experience": 22,
+    "expertise": [
+      "Healthcare Technology",
+      "Digital Health",
+      "Product Strategy",
+      "Healthcare Operations",
+      "Technology Transformation"
+    ],
+    "industries": [
+      "Healthcare",
+      "Digital Health",
+      "Medical Technology"
+    ],
+    "experience_summary": "22 years working across healthcare technology, digital health products, healthcare operations, and technology transformation programs.",
+    "skills": [
+      "Healthcare Technology",
+      "Digital Health",
+      "Product Strategy",
+      "Healthcare Operations",
+      "Technology Transformation"
+    ]
+  }
+]

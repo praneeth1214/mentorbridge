@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T18:57:18.762686+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 61
+    },
+    "previous_hash": "GENESIS",
+    "current_hash": "d5548a844d458dbe6063730a797ba638d4cac42aece95b0f7e584fbfb855e32c"
+  },
+  {
+    "id": 2,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T19:08:18.891963+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 35
+    },
+    "previous_hash": "d5548a844d458dbe6063730a797ba638d4cac42aece95b0f7e584fbfb855e32c",
+    "current_hash": "3dfb47fd472664b8e4fd3334674d4f1179fcc8989fd51c721edb9c3025de464e"
+  },
+  {
+    "id": 3,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T19:08:37.187054+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 44
+    },
+    "previous_hash": "3dfb47fd472664b8e4fd3334674d4f1179fcc8989fd51c721edb9c3025de464e",
+    "current_hash": "c381eb4eb0668cf2a5f7033db1b169164b1f68ddba052a1fe4fcd9e26ddb0408"
+  },
+  {
+    "id": 4,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T20:43:26.954657+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 44
+    },
+    "previous_hash": "c381eb4eb0668cf2a5f7033db1b169164b1f68ddba052a1fe4fcd9e26ddb0408",
+    "current_hash": "a06071643bad64f17a50c66c55a4d0d148c0b3fed5a20ed04011fef3df33abf7"
+  },
+  {
+    "id": 5,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T20:43:41.290062+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 35
+    },
+    "previous_hash": "a06071643bad64f17a50c66c55a4d0d148c0b3fed5a20ed04011fef3df33abf7",
+    "current_hash": "616c95e507d39a0ce3519e908275c6fa9653957ac6adff92f236a889128fc72a"
+  },
+  {
+    "id": 6,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T20:44:28.865100+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 35
+    },
+    "previous_hash": "616c95e507d39a0ce3519e908275c6fa9653957ac6adff92f236a889128fc72a",
+    "current_hash": "409765981a38e6f60b41cc19e7d3a7e8d3fb602b5a75717d7f38a43761dabe09"
+  },
+  {
+    "id": 7,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T20:49:22.008304+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 35
+    },
+    "previous_hash": "409765981a38e6f60b41cc19e7d3a7e8d3fb602b5a75717d7f38a43761dabe09",
+    "current_hash": "c1dcaec6396dad8eb35080ae82c419552d2e05fae39eb4550b9c16264dd11d19"
+  },
+  {
+    "id": 8,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T20:52:15.908055+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 40
+    },
+    "previous_hash": "c1dcaec6396dad8eb35080ae82c419552d2e05fae39eb4550b9c16264dd11d19",
+    "current_hash": "1abf08cc895697aa66b088adc74cb9d334146db134680314ccd7a462cc9e91a6"
+  },
+  {
+    "id": 9,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T20:53:31.638008+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 44
+    },
+    "previous_hash": "1abf08cc895697aa66b088adc74cb9d334146db134680314ccd7a462cc9e91a6",
+    "current_hash": "3da4d637ea3e82b2e563047b960fa9510e49a1d852fc326e17aedbfd66a2f18d"
+  },
+  {
+    "id": 10,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T20:56:22.545976+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 40
+    },
+    "previous_hash": "3da4d637ea3e82b2e563047b960fa9510e49a1d852fc326e17aedbfd66a2f18d",
+    "current_hash": "8cf8ee97bc1513df3f3dafa710ab11e169c2075839135b1c0367714c54a3798a"
+  },
+  {
+    "id": 11,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T20:56:58.808052+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 40
+    },
+    "previous_hash": "8cf8ee97bc1513df3f3dafa710ab11e169c2075839135b1c0367714c54a3798a",
+    "current_hash": "038d1fc60b4feaea397df237004c6758aabdcebf76c52460809d312c9b677cde"
+  },
+  {
+    "id": 12,
+    "action": "KNOWLEDGE_COPILOT_USED",
+    "timestamp": "2026-09-26T21:01:27.628085+00:00",
+    "metadata": {
+      "domain": "Data & AI",
+      "question_length": 44
+    },
+    "previous_hash": "038d1fc60b4feaea397df237004c6758aabdcebf76c52460809d312c9b677cde",
+    "current_hash": "0f8c1e7381fa2e8f752e28c3ecc2aaad8fd5dff88ec949f611e1ff4717193cfb"
+  }
+]

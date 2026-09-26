@@ -1,0 +1,12 @@
+
+{
+  "title": "MENTORBRIDGE",
+  "description": "MENTORBRIDGE — Bridging Experience with Ambition.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

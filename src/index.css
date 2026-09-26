@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+/* =========================================================
+   MENTORBRIDGE DESIGN TOKENS
+========================================================= */
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+/* =========================================================
+   BASE
+========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #ede8d0;
+  color: #25251f;
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================================================
+   LIGHT THEME
+========================================================= */
+
+:root {
+  color-scheme: light;
+
+  --mb-background: #ede8d0;
+  --mb-surface: #f8f5e9;
+  --mb-surface-subtle: #e5e0c8;
+  --mb-surface-muted: #dcd6bd;
+
+  --mb-text: #25251f;
+  --mb-text-secondary: #666457;
+  --mb-text-muted: #858272;
+  --mb-text-faint: #a7a38e;
+
+  --mb-border: #dcd6bd;
+  --mb-border-subtle: #e4dfc9;
+
+  --mb-accent: #5f6754;
+  --mb-accent-hover: #4d5544;
+  --mb-accent-soft: #e3e6d9;
+  --mb-accent-border: #c8cdbb;
+
+  --mb-success: #5f795f;
+  --mb-success-soft: #e7eee5;
+
+  --mb-warning: #9a7948;
+  --mb-warning-soft: #f4ecdf;
+
+  --mb-danger: #9a625b;
+  --mb-danger-soft: #f3e6e3;
+}
+
+/* =========================================================
+   DARK THEME
+========================================================= */
+
+html.dark {
+  color-scheme: dark;
+
+  --mb-background: #171814;
+  --mb-surface: #20221d;
+  --mb-surface-subtle: #292b25;
+  --mb-surface-muted: #303229;
+
+  --mb-text: #f1f0e8;
+  --mb-text-secondary: #b8b7ab;
+  --mb-text-muted: #96958a;
+  --mb-text-faint: #74746b;
+
+  --mb-border: #373931;
+  --mb-border-subtle: #34362f;
+
+  --mb-accent: #66705d;
+  --mb-accent-hover: #737d69;
+  --mb-accent-soft: #30352d;
+  --mb-accent-border: #4b5145;
+
+  --mb-success: #8ca18a;
+  --mb-success-soft: #29352b;
+
+  --mb-warning: #b79a6c;
+  --mb-warning-soft: #382f22;
+
+  --mb-danger: #bd8279;
+  --mb-danger-soft: #392824;
+}
+
+html.dark body {
+  background: #171814;
+  color: #f1f0e8;
+}
+
+/* =========================================================
+   TAILWIND COLOR OVERRIDES
+   Uses attribute selectors intentionally so Tailwind v4
+   arbitrary-value classes remain valid and safe.
+========================================================= */
+
+/* Backgrounds */
+
+html.dark [class~="bg-[#EDE8D0]"] {
+  background-color: #171814 !important;
+}
+
+html.dark [class~="bg-[#F8F5E9]"] {
+  background-color: #20221d !important;
+}
+
+html.dark [class~="bg-[#E5E0C8]"] {
+  background-color: #292b25 !important;
+}
+
+html.dark [class~="bg-[#DCD6BD]"] {
+  background-color: #303229 !important;
+}
+
+html.dark [class~="bg-[#E3E6D9]"] {
+  background-color: #30352d !important;
+}
+
+html.dark [class~="bg-[#F3E6E3]"] {
+  background-color: #352724 !important;
+}
+
+html.dark [class~="bg-[#E7EEE5]"] {
+  background-color: #29352b !important;
+}
+
+/* Text */
+
+html.dark [class~="text-[#25251F]"] {
+  color: #f1f0e8 !important;
+}
+
+html.dark [class~="text-[#666457]"] {
+  color: #b8b7ab !important;
+}
+
+html.dark [class~="text-[#858272]"] {
+  color: #96958a !important;
+}
+
+html.dark [class~="text-[#A7A38E]"] {
+  color: #74746b !important;
+}
+
+html.dark [class~="text-[#5F6754]"] {
+  color: #b9c2ad !important;
+}
+
+html.dark [class~="text-[#4D5544]"] {
+  color: #c5ccba !important;
+}
+
+/* Borders */
+
+html.dark [class~="border-[#DCD6BD]"] {
+  border-color: #373931 !important;
+}
+
+html.dark [class~="border-[#E4DFC9]"] {
+  border-color: #34362f !important;
+}
+
+html.dark [class~="border-[#C8CDBB]"] {
+  border-color: #4b5145 !important;
+}
+
+/* Accent backgrounds */
+
+html.dark [class~="bg-[#5F6754]"] {
+  background-color: #66705d !important;
+}
+
+/* Hover accent */
+
+html.dark [class~="hover:bg-[#4D5544]"]:hover {
+  background-color: #737d69 !important;
+}
+
+/* =========================================================
+   WHITE / BLACK TAILWIND OVERRIDES
+========================================================= */
+
+html.dark [class~="bg-white"] {
+  background-color: #20221d !important;
+}
+
+html.dark [class~="text-white"] {
+  color: #ffffff !important;
+}
+
+html.dark [class~="text-black"] {
+  color: #f1f0e8 !important;
+}
+
+html.dark [class~="border-white"] {
+  border-color: #373931 !important;
+}
+
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  color: #f1f0e8 !important;
+  background-color: #20221d !important;
+  border-color: #3a3c34 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #77776f !important;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+  border-color: #66705d !important;
+  outline-color: #66705d;
+}
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+  background: #c8cdbb;
+  color: #25251f;
+}
+
+html.dark ::selection {
+  background: #4b5145;
+  color: #f1f0e8;
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ede8d0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8cdbb;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aeb5a2;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #171814;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #3a3c34;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4a4d44;
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+:focus-visible {
+  outline: 2px solid #5f6754;
+  outline-offset: 2px;
+}
+
+html.dark :focus-visible {
+  outline-color: #9da894;
+}
+
+/* =========================================================
+   TRANSITIONS
+========================================================= */
+
+.transition-base {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+}
