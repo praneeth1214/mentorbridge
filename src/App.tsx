@@ -59,7 +59,7 @@ export default function App() {
         ===================================================== */}
 
         <Route
-          path="/dashboard"
+  path="/dashboard/*"
           element={
             <DashboardLayout>
               <Routes>
