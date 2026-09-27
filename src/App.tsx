@@ -25,125 +25,74 @@ export default function App() {
     <BrowserRouter>
       <Routes>
 
-        {/* =====================================================
-            PUBLIC
-        ===================================================== */}
+        {/* Public */}
+        <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/student-login" element={<StudentLogin />} />
+        <Route path="/mentor-login" element={<MentorLogin />} />
+        <Route path="/signup" element={<SignUp />} />
 
-        <Route
-          path="/"
-          element={<Landing />}
-        />
+        {/* Dashboard */}
+        <Route path="/dashboard" element={<DashboardLayout />}>
 
-        <Route
-          path="/login"
-          element={<Login />}
-        />
+          <Route index element={<Dashboard />} />
 
-        <Route
-          path="/student-login"
-          element={<StudentLogin />}
-        />
+          <Route
+            path="find-mentor"
+            element={<FindMentor />}
+          />
 
-        <Route
-          path="/mentor-login"
-          element={<MentorLogin />}
-        />
+          <Route
+            path="ai-analysis"
+            element={<AIAnalysis />}
+          />
 
-        <Route
-          path="/signup"
-          element={<SignUp />}
-        />
+          <Route
+            path="matches"
+            element={<MatchResults />}
+          />
 
-        {/* =====================================================
-            DASHBOARD
-        ===================================================== */}
+          <Route
+            path="mentor/:id"
+            element={<MentorProfile />}
+          />
 
-        <Route
-  path="/dashboard/*"
-          element={
-            <DashboardLayout>
-              <Routes>
-                <Route
-                  index
-                  element={<Dashboard />}
-                />
+          <Route
+            path="my-matches"
+            element={<MyMatches />}
+          />
 
-                <Route
-                  path="find-mentor"
-                  element={<FindMentor />}
-                />
+          <Route
+            path="knowledge"
+            element={<KnowledgeCopilot />}
+          />
 
-                <Route
-                  path="ai-analysis"
-                  element={<AIAnalysis />}
-                />
+          <Route
+            path="trust-ledger"
+            element={<TrustLedger />}
+          />
 
-                <Route
-                  path="matches"
-                  element={<MatchResults />}
-                />
+          <Route
+            path="profile"
+            element={<Profile />}
+          />
 
-                <Route
-                  path="mentor/:id"
-                  element={<MentorProfile />}
-                />
+          <Route
+            path="settings"
+            element={<Settings />}
+          />
 
-                <Route
-                  path="my-matches"
-                  element={<MyMatches />}
-                />
+          <Route
+            path="design-system"
+            element={<DesignSystem />}
+          />
 
-                <Route
-                  path="knowledge"
-                  element={<KnowledgeCopilot />}
-                />
+        </Route>
 
-                <Route
-                  path="trust-ledger"
-                  element={<TrustLedger />}
-                />
-
-                <Route
-                  path="profile"
-                  element={<Profile />}
-                />
-
-                <Route
-                  path="settings"
-                  element={<Settings />}
-                />
-
-                <Route
-                  path="design-system"
-                  element={<DesignSystem />}
-                />
-
-                <Route
-                  path="*"
-                  element={
-                    <Navigate
-                      to="/dashboard"
-                      replace
-                    />
-                  }
-                />
-              </Routes>
-            </DashboardLayout>
-          }
-        />
-
-        {/* =====================================================
-            FALLBACK
-        ===================================================== */}
-
+        {/* Fallback */}
         <Route
           path="*"
-          element={
-            <Navigate
-              to="/"
-              replace
-            />
-          }
+          element={<Navigate to="/" replace />}
         />
 
       </Routes>

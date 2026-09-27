@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { ReactNode } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import {
   BarChart3,
   Brain,
@@ -17,10 +16,6 @@ import {
 } from 'lucide-react'
 
 type Theme = 'light' | 'dark' | 'system'
-
-interface DashboardLayoutProps {
-  children: ReactNode
-}
 
 const getInitialTheme = (): Theme => {
   const saved = localStorage.getItem('mentorbridge_theme')
@@ -108,9 +103,7 @@ const navSections = [
   },
 ]
 
-function DashboardLayout({
-  children,
-}: DashboardLayoutProps) {
+function DashboardLayout() {
   const navigate = useNavigate()
 
   const [collapsed, setCollapsed] = useState(false)
@@ -126,6 +119,7 @@ function DashboardLayout({
 
   useEffect(() => {
     applyTheme(theme)
+
     localStorage.setItem(
       'mentorbridge_theme',
       theme,
@@ -283,7 +277,6 @@ function DashboardLayout({
 
         </div>
 
-
         {/* Navigation */}
 
         <nav className="flex-1 overflow-y-auto px-3 py-5">
@@ -370,7 +363,6 @@ function DashboardLayout({
 
         </nav>
 
-
         {/* Bottom Navigation */}
 
         <div className="border-t border-[#DCD6BD] p-3">
@@ -423,7 +415,6 @@ function DashboardLayout({
 
           </NavLink>
 
-
           {/* Settings */}
 
           <NavLink
@@ -472,7 +463,6 @@ function DashboardLayout({
             )}
 
           </NavLink>
-
 
           {/* User */}
 
@@ -532,7 +522,6 @@ function DashboardLayout({
 
         </div>
 
-
         {/* Collapse Button */}
 
         <button
@@ -576,7 +565,6 @@ function DashboardLayout({
 
       </aside>
 
-
       {/* =====================================================
           MOBILE HEADER
       ===================================================== */}
@@ -613,7 +601,6 @@ function DashboardLayout({
         </button>
 
       </header>
-
 
       {/* =====================================================
           MOBILE OVERLAY
@@ -657,7 +644,6 @@ function DashboardLayout({
               </button>
 
             </div>
-
 
             {/* Mobile Navigation */}
 
@@ -728,7 +714,6 @@ function DashboardLayout({
 
             </nav>
 
-
             {/* Mobile Bottom Navigation */}
 
             <div className="border-t border-[#DCD6BD] p-3">
@@ -761,7 +746,6 @@ function DashboardLayout({
 
               </NavLink>
 
-
               <NavLink
                 to="/dashboard/settings"
                 onClick={closeMobile}
@@ -791,7 +775,6 @@ function DashboardLayout({
 
               </NavLink>
 
-
               <button
                 onClick={handleLogout}
                 className="mt-1 flex w-full items-center gap-3 rounded-md px-3 py-2.5 text-xs font-medium text-[#666457] hover:bg-[#E5E0C8] hover:text-[#25251F]"
@@ -809,7 +792,6 @@ function DashboardLayout({
 
         </div>
       )}
-
 
       {/* =====================================================
           MAIN CONTENT
@@ -830,7 +812,7 @@ function DashboardLayout({
         `}
       >
 
-        {children}
+        <Outlet />
 
       </main>
 
